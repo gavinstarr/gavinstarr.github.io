@@ -1,0 +1,84 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: DINRoundProLight;
+    src: url(DINRoundPro-Light.woff2);
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    font-size: 100%;
+    margin: 5%;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 100;
+    padding: 0.25em 0 1em 0;
+    font-size: 4vw;
+    letter-spacing: 0.25em;
+    text-align: left;
+}
+
+.photos {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding-bottom: 0.5em;
+}
+
+.photos > div {
+    margin: 0;
+    text-align: center;
+}
+
+.verticle > img {
+    padding-bottom: 0.5em;
+    width: 100%;
+    height: auto;
+}
+
+.horizontal > img {
+    padding-bottom: 0.5em;
+    width: 100%;
+    height: auto;
+}
+
+.footer {
+    text-align: center;
+    font-size: 4vw;
+    color:rgb(210, 210, 210);
+    font-family: DINRoundProLight;
+    padding: 1em 1em 0.5em 1em;
+}
+
+@media (min-width: 1000px) {
+    body {
+        width: 66.6%;
+        margin-left: calc(33.3% / 2);
+    }
+
+    h1 {
+        font-size: 2vw;
+        padding-bottom: 1em;
+    }
+    
+    .photos {
+        column-count: 2;
+        column-width: auto;
+        gap: 0 0.5em;
+    }
+
+    .photos > div {
+        max-height: 100vw;
+    }
+
+    .footer {
+        font-size: 1vw;
+        margin-bottom: -4em;
+        padding-bottom: 0;
+    }
+}
