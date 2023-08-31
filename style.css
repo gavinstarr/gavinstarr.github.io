@@ -57,17 +57,18 @@ h1 {
 
 @media (min-width: 1000px) {
     body {
-        width: 66.6%;
-        margin-left: calc(33.3% / 2);
+        width: calc(66.6% / 2.5);
+        margin-left: calc(66.6% / 2);
+        margin-top: 1.5vw;
     }
 
     h1 {
-        font-size: 2vw;
+        font-size: 1.75vw;
         padding-bottom: 1em;
     }
     
     .photos {
-        column-count: 2;
+        column-count: 1;
         column-width: auto;
         gap: 0 0.5em;
     }
@@ -77,7 +78,7 @@ h1 {
     }
 
     .footer {
-        font-size: 1vw;
+        font-size: 0.75vw;
         margin-bottom: -4em;
         padding-bottom: 0;
     }
